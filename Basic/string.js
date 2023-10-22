@@ -34,6 +34,43 @@ console.log(myLastName.toUpperCase()); //KUMAR
 console.log("XyZaBcD".toLowerCase()); //xyzabcd
 console.log("XyZaBcD".toUpperCase()); //XYZABCD
 
+console.log("\n------Camparision b/w Strings------------------");
+//'==' and "===" compare strings case-sensitively. first make both strings in same cases(upper or lower)
+//before compare.
+
+// const isEqual = (str1, str2) =>
+//     str1 === str2;
+
+// const isEqualInUpperCase = (str1, str2) =>
+//     str1.toUpperCase() === str2.toUpperCase();
+
+// const isEqualInLowerCase = (str1, str2) =>
+//     str1.toLowerCase() === str2.toLowerCase();
+
+// console.log(isEqual('Abh', 'abh')) //false
+// console.log(isEqualInUpperCase('Abh', 'abh')); //true
+// console.log(isEqualInLowerCase('Abh', 'abh')); //true
+
+/* use < or > to compare the strings also */
+
+const a = "a";
+const b = "b";
+if (a < b) {
+  // true
+  console.log(`${a} is less than ${b}`);
+} else if (a > b) {
+  console.log(`${a} is greater than ${b}`);
+} else {
+  console.log(`${a} and ${b} are equal.`);
+}
+
+
+
+
+
+
+
+
 
 
 
