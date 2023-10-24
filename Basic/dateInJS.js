@@ -64,4 +64,26 @@ const date1 = new Date(2023,0,33);
 
 const date2 = new Date(2023, 9,24); //10/24/2023
 //date2.setDate(date2.getDate() + 2);
-console.log(`The date after 2 days is ${date2.toLocaleDateString()}`);
+//console.log(`The date after 2 days is ${date2.toLocaleDateString()}`);
+
+//==============================TimeStamp======================================================================================
+// Timestamp - an integer represting number of miliseconds elapsed since 01 Jan 1970.
+//getTime() and Date.Now()
+const timestamp = new Date().getTime();
+//console.log(`The current timestamp by getTime() method  is ${timestamp} ms`);
+
+const anotherTimestamp = Date.now();
+//console.log(`The current timstamp by Date.Now() method is ${anotherTimestamp} ms`);
+
+
+//==================Modifing toLocaleString() method to get more specific output formate==============
+
+// const currentTime = new Date();
+// console.log(currentTime.toLocaleString('default',{
+//     'weekday' : "long",
+//     'month' : "long"
+// // we can other properties like hour, min, sec ..so on to get them in output
+
+// }
+// ));
+
