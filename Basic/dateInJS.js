@@ -87,3 +87,59 @@ const anotherTimestamp = Date.now();
 // }
 // ));
 
+//====================================Exercise questions======================================================================
+//European countries have days of week starting with Monday (number 1), then Tuesday (number 2) and till Sunday (number 7).
+// Write a function getLocalDay(date) that returns the “European” day of week for date.
+
+function getLocalDay(date){
+      let weekdays = date.getDay();
+    // Adjust the day to start with Monday as day number 1
+      if (weekdays === 0)
+        return 7;
+    else
+        return weekdays;
+}
+
+let date = new Date(2012, 0, 3);  // 3 Jan 2012
+
+//console.log( getLocalDay(date) );    
+
+//==========================================Exercise[Which day of month was many days ago?]========================================================================
+/**Create a function getDateAgo(date, days) to return the day of month days ago from the date.
+For instance, if today is 20th, then getDateAgo(new Date(), 1) should be 19th and getDateAgo(new Date(), 2) should be 18th.
+Should work reliably for days=365 or more:
+
+let date = new Date(2015, 0, 2);
+
+alert( getDateAgo(date, 1) ); // 1, (1 Jan 2015)
+alert( getDateAgo(date, 2) ); // 31, (31 Dec 2014)
+alert( getDateAgo(date, 365) ); // 2, (2 Jan 2014)
+
+P.S. The function should not modify the given date.
+ */
+
+let getDateAgo = (date, days) =>{
+        let dateCopy = new Date(date); //The function could not modify the original date so first copying the original date
+        dateCopy.setDate(dateCopy.getDate()- days);
+        return dateCopy.getDate();
+
+}
+
+givenDate = new Date(2015,0,2);
+// console.log(getDateAgo(givenDate, 1));
+// console.log(getDateAgo(givenDate, 2));
+// console.log(getDateAgo(givenDate, 365));
+
+//==================================Execise question===========================================================================
+/**
+ * Write a function getLastDayOfMonth(year, month) that returns the last day of month.
+ * Sometimes it is 30th, 31st or even 28/29th for Feb.
+Parameters:
+year – four-digits year, for instance 2012.
+month – month, from 0 to 11.
+For instance, getLastDayOfMonth(2012, 1) = 29 (leap year, Feb).
+ */
+
+
+
+
