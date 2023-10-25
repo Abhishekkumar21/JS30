@@ -140,6 +140,25 @@ month – month, from 0 to 11.
 For instance, getLastDayOfMonth(2012, 1) = 29 (leap year, Feb).
  */
 
+function getLastDayOfMonth(year, month){
+    return new Date(year, month+1, 0).getDate();
+}
+//console.log(getLastDayOfMonth(2012,1));
 
+//=============================================Exercise===========================================================================
+/**
+ * Create a function getSecondsToTomorrow() that returns the number of seconds till tomorrow.
+For instance, if now is 23:00, then:
+getSecondsToTomorrow() == 3600
+P.S. The function should work at any day, the “today” is not hardcoded.
+ */
 
+function getSecondsToTomorrow(){
+   let now = new  Date();
+   
+   let tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate()+1);
+  let difference = tomorrow - now;
+  return Math.floor(difference/1000);
+}
 
+//console.log(getSecondsToTomorrow());
