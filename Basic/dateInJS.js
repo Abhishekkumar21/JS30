@@ -153,12 +153,13 @@ getSecondsToTomorrow() == 3600
 P.S. The function should work at any day, the “today” is not hardcoded.
  */
 
-function getSecondsToTomorrow(){
-   let now = new  Date();
+// function getSecondsToTomorrow(){
+//    let now = new  Date();
    
-   let tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate()+1);
-  let difference = tomorrow - now;
-  return Math.floor(difference/1000);
-}
+//    let tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate()+1);
+//   let difference = tomorrow - now;
+//   return Math.floor(difference/1000);
+// }
+// console.log(getSecondsToTomorrow());
 
-//console.log(getSecondsToTomorrow());
+
