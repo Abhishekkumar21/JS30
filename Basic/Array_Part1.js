@@ -17,7 +17,7 @@ const anotherMyArray = new Array('Abhishek', 23);
 const arr1 = ['abhishek',23];
 const arr2 = ['Kumar', 24];
 const mergedArray = arr1.concat(arr2);
-//console.log(mergedArray);
+console.log(mergedArray);
 
 //Spread operator(...) - merge/add two or more than two array and returns a new array 
 
@@ -25,4 +25,4 @@ const bollywood_heros = ['Salman', 'Shahrukh'];
 const tollywood_heros = ['Ramcharan', 'Jr NTR'];
 
 const all_heros = [...bollywood_heros, ...tollywood_heros];
-//console.log(all_heros);
+console.log(all_heros);
