@@ -29,3 +29,4 @@ console.log(all_heros);
 
 //Array.isArray()- checks if a value is array or not, returns true/false
 console.log(Array.isArray("abhishek"));
+console.log(Array.isArray([]));
