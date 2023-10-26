@@ -26,3 +26,6 @@ const tollywood_heros = ['Ramcharan', 'Jr NTR'];
 
 const all_heros = [...bollywood_heros, ...tollywood_heros];
 console.log(all_heros);
+
+//Array.isArray()- checks if a value is array or not, returns true/false
+console.log(Array.isArray("abhishek"));
