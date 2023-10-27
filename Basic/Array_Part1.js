@@ -17,7 +17,7 @@ const anotherMyArray = new Array('Abhishek', 23);
 const arr1 = ['abhishek',23];
 const arr2 = ['Kumar', 24];
 const mergedArray = arr1.concat(arr2);
-console.log(mergedArray);
+//console.log(mergedArray);
 
 //Spread operator(...) - merge/add two or more than two array and returns a new array 
 
@@ -25,8 +25,20 @@ const bollywood_heros = ['Salman', 'Shahrukh'];
 const tollywood_heros = ['Ramcharan', 'Jr NTR'];
 
 const all_heros = [...bollywood_heros, ...tollywood_heros];
-console.log(all_heros);
+//console.log(all_heros);
 
 //Array.isArray()- checks if a value is array or not, returns true/false
+
 console.log(Array.isArray("abhishek"));
-console.log(Array.isArray([]));
+
+onsole.log(Array.isArray([]));
+
+//Array.of() - creates array object from given values
+
+const score1 = 300;
+const score2 = 500;
+const score3 = 400;
+
+const all_scores = Array.of(score1,score2, score3);
+//console.log(all_scores);
+
