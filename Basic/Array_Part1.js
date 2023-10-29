@@ -27,18 +27,35 @@ const tollywood_heros = ['Ramcharan', 'Jr NTR'];
 const all_heros = [...bollywood_heros, ...tollywood_heros];
 //console.log(all_heros);
 
-//Array.isArray()- checks if a value is array or not, returns true/false
+//======================================Array.isArray()- checks if a value is array or not, returns true/false
 
-console.log(Array.isArray("abhishek"));
+console.log(Array.isArray("abhishek")); //false
+console.log(Array.isArray([])); //true
 
-onsole.log(Array.isArray([]));
-
-//Array.of() - creates array object from given values
+//========================================Array.of() - creates array object from given values
 
 const score1 = 300;
 const score2 = 500;
 const score3 = 400;
 
 const all_scores = Array.of(score1,score2, score3);
-//console.log(all_scores);
+//console.log(all_scores); [300,500,400]
+
+//=========================================Array.from(): creates an array from iterable object==============================================================
+
+const name = 'Abhishek';
+//console.log(Array.from(name)); //['A', 'b', 'h','i', 's', 'h','e', 'k' ]
+
+//*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Interview ALERT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+// console.log(Array.from({name: 'Abhishek'})); //[]=> an empty array. It will not directly convert the given obj in array.
+
+//but 
+const user = {name: 'ABhishek'};
+// console.log(Array.of(name)); //['Abhishek']
+// console.log(Array.of(user.name));//['Abhishek']
+
+//Example-
+const loggedInUserInfo = {fullName: 'Abhishek', DOB:'2000-8-24', isLoggedIn: true};
+console.log(Array.of(loggedInUserInfo.fullName, loggedInUserInfo.DOB)); 
+
 
