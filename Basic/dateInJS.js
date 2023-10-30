@@ -6,7 +6,7 @@
 const curDate = new Date(); -> returns current date and time
 const timestamp = new Date(milisconds); -> returns a inte
 const dateGivenInStringFormate = new Date(dateStringFormate);
-const yourGivenDate = new Date(year,month,daydate,hour,minutes,seconds,miliseconds);
+const yourGivenDate = new Date(year,month,date,hour,minutes,seconds,miliseconds);
  */
 
 const curDate = new Date();
@@ -51,7 +51,7 @@ const myDate = new Date();
 //SetFullyear(), setMonth(), setHours()....many more
 
 myDate.setFullYear('2024');
-//console.log(myDate.toLocaleString());
+//console.log(myDate.toLocaleString());// only year will be set to 2024, date, month , time will be same as localcurrent time
 
 
 
@@ -82,7 +82,7 @@ const anotherTimestamp = Date.now();
 // console.log(currentTime.toLocaleString('default',{
 //     'weekday' : "long",
 //     'month' : "long"
-// // we can other properties like hour, min, sec ..so on to get them in output
+// // we can modify other properties like hour, min, sec ..so on to get them in output
 
 // }
 // ));
