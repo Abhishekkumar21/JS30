@@ -28,3 +28,6 @@ console.log(userInformation["Last Name"])
 userInformation.age = 23;
 userInformation.gender = 'M';
 console.log(userInformation);
+
+//freezing a object
+Object.freeze(userInformation);
