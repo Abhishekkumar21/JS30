@@ -23,3 +23,8 @@ console.log(userInformation.firstName);
 console.log(userInformation["firstName"]);
   //console.log(userInformation.last Name); // error: string type keys can be accessed only by [] method
 console.log(userInformation["Last Name"])
+
+//adding new property to an object:
+userInformation.age = 23;
+userInformation.gender = 'M';
+console.log(userInformation);
