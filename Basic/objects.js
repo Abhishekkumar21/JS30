@@ -48,5 +48,19 @@ const User ={
         return currentDate.getFullYear() - birthDate.getFullYear();
     }
 }
-console.log(`user is ${User.name.firstName} ${User.name.lastName}\nHis date of birth is ${User.dateOfbirth.toLocaleDateString()} and\nthe current age is ${User.calculateAge()}`);
+//console.log(`user is ${User.name?.firstName} ${User.name?.lastName}\nHis date of birth is ${User.dateOfbirth.toLocaleDateString()} and\nthe current age is ${User.calculateAge()}`);
+//User.name?.firstName ---> accesing nested object ==> OPTIONAL CHAINING
+
+//OPTIONAL CHAINING : it is a feature is JS that allows you to safely access the properties or call method on object
+    //, even if the object or any intermedate property in the chain is null r undefined.
+    //It helps in preventing the 'TypeError' error in case of nested object. It is denoted by '?' operator. Example-
+    const userDetail = {
+        name: "John",
+        address: {
+          city: "New York",
+        },
+      };
+    //const country = userDetail.address.country; // Here we are accessin a nested prop without optional chaining it will trow error beacuse it is not present in the nested object address 
+      const country = userDetail.address?.country; //This will not throw an error, 'country' will be 'undefined'
+    //console.log(country); //undefined
 
