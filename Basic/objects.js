@@ -40,7 +40,7 @@ userInformation['country'] = 'Canada'; //this propery cannot be added in userInf
 //An object can contain any type of date even objects/NestObjects, Functions
 
 const User ={
-    fullName : 'Sam',
+    name : {firstName: 'Abhishek', lastName : 'Kumar' },
     dateOfbirth : new Date('2000-12-01'),
     calculateAge : function (){
         let currentDate = new Date();
@@ -48,5 +48,5 @@ const User ={
         return currentDate.getFullYear() - birthDate.getFullYear();
     }
 }
-console.log(`user is ${User.fullName}.\nHis date of birth is ${User.dateOfbirth.toLocaleDateString()} and\nthe current age is ${User.calculateAge()}`);
+console.log(`user is ${User.name.firstName} ${User.name.lastName}\nHis date of birth is ${User.dateOfbirth.toLocaleDateString()} and\nthe current age is ${User.calculateAge()}`);
 
