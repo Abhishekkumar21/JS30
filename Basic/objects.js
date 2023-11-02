@@ -49,10 +49,11 @@ const User ={
     }
 }
 //console.log(`user is ${User.name?.firstName} ${User.name?.lastName}\nHis date of birth is ${User.dateOfbirth.toLocaleDateString()} and\nthe current age is ${User.calculateAge()}`);
+
 //User.name?.firstName ---> accesing nested object ==> OPTIONAL CHAINING
 
 //OPTIONAL CHAINING : it is a feature is JS that allows you to safely access the properties or call method on object
-    //, even if the object or any intermedate property in the chain is null r undefined.
+    //, even if the object or any intermedate property in the chain is null or undefined.
     //It helps in preventing the 'TypeError' error in case of nested object. It is denoted by '?' operator. Example-
     const userDetail = {
         name: "John",
@@ -64,3 +65,22 @@ const User ={
       const country = userDetail.address?.country; //This will not throw an error, 'country' will be 'undefined'
     //console.log(country); //undefined
 
+/**MERGING of objects: two or more object can be merged in a single object by using-
+  Object.assign(target, source) method: the Object.assign() static method copies all enumerable own properties 
+  from one or more source objects to a target object. It returns the MODIFIED target object.
+*/
+  
+const target = {a:1, b:3};
+const source = {c:2, d:5};
+
+const returnedTargetObject = Object.assign(target, source);
+//console.log(returnedTargetObject); //{ a: 1, b: 3, c: 2, d: 5 }
+//console.log(target === returnedTargetObject); //true
+
+//if you do not want to modify the any obj by keeping it as a target then take target as empty
+//object and take all the present object as source
+const o1 = {a:1};
+const o2 = {b:2, c:3};
+const o3 = {d:4, e:5, f:6};
+const obj = Object.assign({}, o1, o2, o3); //none of o1,o2,o3 will be modified
+//console.log(obj);//{ a: 1, b: 2, c: 3, d: 4, e: 5, f: 6 }
