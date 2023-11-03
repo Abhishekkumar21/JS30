@@ -111,4 +111,29 @@ const valuesFromDB = [
 
 //console.log(valuesFromDB[1].email, valuesFromDB[0].email, valuesFromDB[2].id);
 
+/** Some Other useful object's methods */
 
+//Object.keys() - returns an array of all the keys of object on which it is called
+const xUser = {
+      id : 1234,
+      email : 'p@gmail.com',
+      isLoggedIn : 'false'
+}
+const arrayOfKeys = Object.keys(xUser);
+//console.log(arrayOfKeys); //[ 'id', 'email', 'isLoggedIn' ]
+
+//Object.values() - returns an array of all the values of object on which it is called
+
+const arrayOfValues = Object.values(xUser);
+//console.log(arrayOfValues); //[ 1234, 'p@gmail.com', 'false' ]
+
+
+//Object.entries() - returs an array of each key-value pair's array  [!!!!!!rarely used!!!!!!!!]
+
+const arrayOfProperties = Object.entries(xUser);
+//console.log(arrayOfProperties);// [[ 'id', 1234 ],[ 'email', 'p@gmail.com' ],[ 'isLoggedIn', 'false' ]]
+
+
+//objectName.hasPropeties() - checks a given prop is present in object or not. returns boolena value true/false
+
+//console.log(xUser.hasOwnProperty('id')); //true : id is present in xUser named object
