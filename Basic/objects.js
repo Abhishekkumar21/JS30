@@ -137,3 +137,29 @@ const arrayOfProperties = Object.entries(xUser);
 //objectName.hasPropeties() - checks a given prop is present in object or not. returns boolena value true/false
 
 //console.log(xUser.hasOwnProperty('id')); //true : id is present in xUser named object
+
+
+//================================Object Destructuring=====================================================
+//Destructuring assignment is a special syntax that allows us to “unpack” arrays or objects 
+//into a bunch of variables, as sometimes that’s more convenient.
+
+//Syntax : let {var1, var2} = object //object: you want to destructure/split
+
+const options = {
+  title: "Menu",
+  width: 100,
+  height: 200
+};
+
+const {title, width, height} = options; 
+// console.log(title);  
+// console.log(width);
+// console.log(height);
+// properties options.title, options.width, options.height are assigned to corresponding variables 
+//title, width, height
+
+//If we want to assign a property to a variable with another name, then then we can set the variable name using a colon:
+ const {title : t, width : w, height :h} = options;
+ console.log(t, w, h); // t->title, w->width, h-> height
+ 
+
