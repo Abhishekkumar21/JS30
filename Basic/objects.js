@@ -20,10 +20,10 @@
     } 
 
 //Access Object: object can be accessed by dot operation and also by []
-console.log(userInformation.firstName);
-console.log(userInformation["firstName"]);
+//console.log(userInformation.firstName);
+//console.log(userInformation["firstName"]);
   //console.log(userInformation.last Name); // error: string type keys can be accessed only by [] method
-console.log(userInformation["Last Name"])
+//console.log(userInformation["Last Name"])
 
 //adding new property to an object:
 userInformation.age = 23;
@@ -37,7 +37,7 @@ userInformation['country'] = 'Canada'; //this propery cannot be added in userInf
 //console.log(userInformation);
 
 
-//An object can contain any type of date even objects/NestObjects, Functions
+//An object can contain any type of date even objects/NestedObjects, Functions
 
 const User ={
     name : {firstName: 'Abhishek', lastName : 'Kumar' },
@@ -79,8 +79,36 @@ const returnedTargetObject = Object.assign(target, source);
 
 //if you do not want to modify the any obj by keeping it as a target then take target as empty
 //object and take all the present object as source
-const o1 = {a:1};
-const o2 = {b:2, c:3};
-const o3 = {d:4, e:5, f:6};
-const obj = Object.assign({}, o1, o2, o3); //none of o1,o2,o3 will be modified
+  const o1 = {a:1};
+  const o2 = {b:2, c:3};
+  const o3 = {d:4, e:5, f:6};
+//const obj = Object.assign({}, o1, o2, o3); //none of o1,o2,o3 will be modified
 //console.log(obj);//{ a: 1, b: 2, c: 3, d: 4, e: 5, f: 6 }
+
+
+/** Object.assign() is not used mostly, we use Spread operator mostly for concatinating the objects */
+
+const obj = {...o1, ...o2, ...o3};
+//console.log(obj);
+
+
+//===Getting the values from database (i.e array of objects) and accessing them========
+
+const valuesFromDB = [
+            {
+              id : 1,
+              email : "a@gmail.com"
+            },
+            {
+              id : 2,
+              email : "b@gmail.com"
+            },
+            {
+              id : 2,
+              email : "c@gmail.com"
+            }
+]
+
+//console.log(valuesFromDB[1].email, valuesFromDB[0].email, valuesFromDB[2].id);
+
+
