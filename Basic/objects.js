@@ -151,7 +151,7 @@ const options = {
   height: 200
 };
 
-const {title, width, height} = options; 
+//const {title, width, height} = options; 
 // console.log(title);  
 // console.log(width);
 // console.log(height);
@@ -161,6 +161,19 @@ const {title, width, height} = options;
 //If we want to assign a property to a variable with another name, then then we can set the variable name using a colon:
         // const {title : t, width : w, height :h} = options;
         // console.log(t, w, h); // t->title, w->width, h-> height
+
+
+//Rest '...' operator pattern in destructuring ->
+//What if the object has more properties than we have variables? Can we take some and then assign the “rest” somewhere?
+
+        // const {title} = options;
+        // console.log(title); //Menu
+
+    //const {title, ...Rest} = options;
+    // title = 'Men'
+    // Rest = {width: 100, height : 200}
+
+
 
         
 
