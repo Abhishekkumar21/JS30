@@ -159,7 +159,11 @@ const {title, width, height} = options;
 //title, width, height
 
 //If we want to assign a property to a variable with another name, then then we can set the variable name using a colon:
- const {title : t, width : w, height :h} = options;
- console.log(t, w, h); // t->title, w->width, h-> height
- 
+        // const {title : t, width : w, height :h} = options;
+        // console.log(t, w, h); // t->title, w->width, h-> height
+
+        
+
+
+
 
