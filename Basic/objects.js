@@ -190,7 +190,38 @@ years property into the variable age.
 isAdmin property into the variable isAdmin (false, if no such property)*/
 
 let {name, years : age, isAdmin = false} = user;
-console.log(name, age, isAdmin);
+//console.log(name, age, isAdmin);
+
+//2): The Maximal Salary-----------------------------------------------
+/**
+ * There is a salaries object:
+
+let salaries = {
+  "John": 100,
+  "Pete": 300,
+  "Mary": 250
+};
+Create the function topSalary(salaries) that returns the name of the top-paid person.
+
+If salaries is empty, it should return null.
+If there are multiple top-paid persons, return any of them.
+ */
+let salaries = {
+  "John": 100,
+  "Pete": 300,
+  "Mary": 250
+};
+
+// function topSalary(salaries){
+//     if(Object.keys(salaries).length === 0) //condition to check if object is empty by Oject.Keys().length
+
+// }
+
+function topSalary(salaries) {
+  return Object.keys(salaries).reduce((max, s) => salaries[max] > salaries[s] ? max : s)
+  }
+
+console.log(`${topSalary(salaries)}`)
 
 
 
