@@ -221,7 +221,29 @@ function topSalary(salaries) {
   return Object.keys(salaries).reduce((max, s) => salaries[max] > salaries[s] ? max : s)
   }
 
-console.log(`${topSalary(salaries)}`)
+//console.log(`${topSalary(salaries)}`)
+
+
+
+/***************************************'this' keyword****************************************
+ * this - is used to refer to the current object/contex.
+ * In non–strict mode, this is always a reference to an object;
+ * In strict mode, it can be any value
+ * The value of this depends on in which context it appears: function, class, or global.
+ * ******************/
+
+
+let tinderUser = {
+  name: "John",
+  age: 30,
+  welcomeMessage : function(){
+    return `Hey! ${this.name}, Welcome to Tinder.`; //this-> tidnerUser
+  }
+};
+//console.log(tinderUser.welcomeMessage()); //Hey! John, Welcome to Tinder.
+tinderUser.name = 'Sam';
+//Here , context has been changed , now we are talking about name: Sam instead of 'John'
+//console.log(tinderUser.welcomeMessage()); //Hey! Sam, Welcome to Tinder.
 
 
 
