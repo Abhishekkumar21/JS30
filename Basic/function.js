@@ -22,4 +22,9 @@ const addThreeNumbers  =  function(num1, num2, num3){
 const addFourNumbers = (num1,num2,num3, num4) => {return num1+num2+num3+num4};
 //console.log(addFourNumbers(4,5,6,7));
 
+const multiply = (num1, num2) => num1*num2;
+console.log(multiply(4,5))
+
+
+
 
