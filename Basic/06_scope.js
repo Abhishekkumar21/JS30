@@ -72,7 +72,23 @@ console.log(a, b, c);
 // var a = 10;
 // let a = 5; //SyntaxError - cannot redeclare
 // const a = 6; //SyntaxError - cannot redeclare
-//  a = 7;
-// console.log(a);
+//  var a = 7; // valid a-7
+// a =8 ; 
+// console.log(a); //8
 
-//var - also can not be again re-declared with let or const but can be re-assigned another value
+//var - also can not be re-declared with let or const but can be re-assigned another value
+
+/*
+var a; //var can be only declare and intialize later in program
+a =5;
+console.log(a)
+
+let b; // let also can be only declare and intialize later in program
+b=6;
+console.log(b);
+
+const c; //SyntaxError: Missing initializer in const declaration
+c = 4; // const :: necessary to initialize while declaring
+console.log(c);
+
+*/
