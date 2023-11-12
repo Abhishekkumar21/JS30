@@ -27,6 +27,7 @@ const multiply = (num1, num2) => num1*num2; // if there is a single line of stat
 
 
 /**'this' keyword with Arrow Function****************/
+//Arrow function does not have 'this'
 
 
 
