@@ -246,4 +246,40 @@ tinderUser.name = 'Sam';
 //console.log(tinderUser.welcomeMessage()); //Hey! Sam, Welcome to Tinder.
 
 
+/***********************************************Object Methods****************************************************************/
+//A function that is a property of an object is called its method.
+
+  // let instaUser = {
+  //   name : 'jon',
+  //   age : 23
+  // }
+
+  // instaUser.sayHi = function(){
+  //   console.log('Hello!');
+  // }
+
+  // instaUser.sayHi();//Hello
+
+//Method shorthand : There exists a shorter syntax for methods in an object literal:
+
+  // let instaUser = {
+  //   name : 'jon',
+  //   age : 23,
+  //   sayHi : function() {
+  //     console.log('Hello!');
+  //   }
+  // }
+
+  //WE can omit function key word and directly write sayHi()
+
+  let instaUser = {
+    name : 'jon',
+    age : 23,
+    sayHi() {
+      console.log('Hello!');
+    }
+  }
+  
+  instaUser.sayHi();
+
 
