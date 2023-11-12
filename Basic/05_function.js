@@ -27,7 +27,18 @@ const multiply = (num1, num2) => num1*num2; // if there is a single line of stat
 
 
 /**'this' keyword with Arrow Function****************/
-//Arrow function does not have 'this'
+//Arrow function does not have 'this'.If we reference this from such a function, it’s taken from the outer “normal” function.
+
+let user = {
+    firstName: "Ilya",
+    sayHi() {
+      let arrow = () => console.log(this.firstName); // here arrow() uses this from the outer user.sayHi() method
+      arrow();
+    }
+  };
+  
+  user.sayHi(); // Ilya
+
 
 
 
