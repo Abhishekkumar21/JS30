@@ -2,7 +2,7 @@
 
 //var, let, const
 //var has program scope / global scope
-//let & const  have body scope / local scope
+//let & const  have block scope / local scope
 /*
 var a = 1;
 let b = 2;
@@ -72,11 +72,11 @@ console.log(a, b, c);
 // var a = 10;
 // let a = 5; //SyntaxError - cannot redeclare
 // const a = 6; //SyntaxError - cannot redeclare
-//  var a = 7; // valid a-7
+//  var a = 7; // valid a-7: can be reassigned
 // a =8 ; 
 // console.log(a); //8
 
-//var - also can not be re-declared with let or const but can be re-assigned another value
+//var - also can not be re-declared with let or const, but can be re-assigned another value
 
 /*
 var a; //var can be only declare and intialize later in program
