@@ -34,11 +34,13 @@ let user = {
     sayHi() {
       let arrow = () => console.log(this.firstName); // here arrow() uses this from the outer user.sayHi() method
       arrow();
+      console.log(this); //{ firstName: 'Ilya', sayHi: [Function: sayHi] }
     }
   };
   
-  user.sayHi(); // Ilya
+//user.sayHi(); // Ilya
 
+console.log(this); // {}
 
 
 
