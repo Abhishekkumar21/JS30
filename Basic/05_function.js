@@ -66,7 +66,7 @@ let user = {
     let username = 'abhishek';
     console.log(this); //{} : empty object
  }
-chai2();
+//chai2();
 
 const chai3 = () => {
     let username = 'abhi';
