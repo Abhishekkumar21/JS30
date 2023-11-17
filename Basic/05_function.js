@@ -37,10 +37,42 @@ let user = {
       console.log(this); //{ firstName: 'Ilya', sayHi: [Function: sayHi] }
     }
   };
-  
 //user.sayHi(); // Ilya
 
-console.log(this); // {}
+
+
+//console.log(this); // {} : empty object in node environment
+ //IN browser : console.log(this) - a Globle object that is Window object.
+
+
+
+// fetching this from  a function declaration-----------------
+ function chai() {
+    console.log(this); ////we will get a global object
+ }
+ //chai(); 
+
+
+ function chai1() {
+    let username = 'abhishek';
+    console.log(this.username); //undefined
+ }
+ //chai1();
+
+
+
+//more on 'this' in arrow -
+ const chai2 = () => {
+    let username = 'abhishek';
+    console.log(this); //{} : empty object
+ }
+chai2();
+
+const chai3 = () => {
+    let username = 'abhi';
+    console.log(this.username); //undefined
+}
+//chai3();
 
 
 
