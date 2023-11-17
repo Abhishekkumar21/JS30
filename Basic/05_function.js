@@ -1,4 +1,4 @@
-//function Declarations-
+//function Declarations---------------------------------------------------------------------------------------
 
 // console.log(addTwoNumbers(4,5)); // this will work:  we can call a function Declaration before defining it.
 function addTwoNumbers(num1, num2){
@@ -7,7 +7,7 @@ function addTwoNumbers(num1, num2){
 
 //console.log(addTwoNumbers(4,5));// 9
 
-//function Expressions- 
+//function Expressions---------------------------------------------------------------------------------------------
 
 //console.log(addThreeNumbers(4,5,6)); -> Function exps cannot be called before its initialization/definition
 const addThreeNumbers  =  function(num1, num2, num3){
