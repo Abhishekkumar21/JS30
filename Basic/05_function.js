@@ -25,6 +25,9 @@ const addFourNumbers = (num1,num2,num3, num4) => {return num1+num2+num3+num4};
 const multiply = (num1, num2) => num1*num2; // if there is a single line of statement in function block then no need to metion return with {}
 //console.log(multiply(4,5));
 
+const subs = (num1, num2) => (num1-num2); // we can wrap single line code in small brackets (...) without 'return'
+//console.log(subs(4,1));
+
 
 /**'this' keyword with Arrow Function****************/
 //Arrow function does not have 'this'.If we reference this from such a function, it’s taken from the outer “normal” function.
