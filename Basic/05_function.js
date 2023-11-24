@@ -16,7 +16,10 @@ const addThreeNumbers  =  function(num1, num2, num3){
 //console.log(addThreeNumbers(4,5,6));
 
 
-//Arrow functions - an easiest form of function Declarations. No need to mention function keyword.
+//ARROW FUNCTION - an easiest form of function Declarations. No need to mention function keyword.
+//they haven't their own this, arguments or super. They can't be used as constructors too.
+
+
 
 //console.log(addFourNumbers(4,5,6,7)); ->Cannot access 'addFourNumbers' before initialization.
 const addFourNumbers = (num1,num2,num3, num4) => {return num1+num2+num3+num4};
@@ -43,6 +46,7 @@ let user = {
 //user.sayHi(); // Ilya
 
 
+//DISCUSSION ON 'THIS'------------------------------------------------------------------
 
 //console.log(this); // {} : empty object in node environment
  //IN browser : console.log(this) - a Globle object that is Window object.
@@ -76,6 +80,8 @@ const chai3 = () => {
     console.log(this.username); //undefined
 }
 //chai3();
+
+//---------------------------------------------------------------------------------------------------------
 
 
 
