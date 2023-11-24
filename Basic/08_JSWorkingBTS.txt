@@ -1,0 +1,49 @@
+How Javascript works behind the scene?
+
+=> Javascript Execution Context : Mainly of 2 types-
+    - Global Execution Context
+    - Function/Functional Execution Context
+    - Eval Execution Context (mentioned in some documentation like in mongose)
+
+A JavaScript code runs in two phases :
+    - Memory Creation phase or (only "Creation Phase)
+    - Execution phase
+
+
+let val1 = 10;
+let val2 = 5;
+function addNum(num1, num2) {
+    let total = num1 + num2;
+    return total
+}
+let result1 = addNum(val1, val2);
+let result2 = addNum(val1, val2);
+
+Analysis of above code--
+========================
+
+1) {source code} --> Global Execution ---[refered to]---> 'this'
+
+2) Memory Phase - in this Memory gets assigned to varialbles/functions with their default values
+    Variable/unctionName => Default values
+                    val1 -> undefined
+                    val2 -> undefined
+                    addNum -> definition
+                    result1 -> undefined
+                    result2 -> undefined
+
+3) Execution Phase - in this phase progream will start to execute; values given to variable in code will be assigned to variables
+   - val1 <- 10 (val1 will get 10)
+   - val2 <- 5  (val2 will get 5)
+   - result1 :
+         - addNum() ->for this function, a totally new execution context will be created
+                          --------------------------
+                         |       new Variable Env.  |                        
+                         |           +              |
+                         |       Execution Thread   | ---> will be deleted after the function completes executing and return
+                         |                          |
+                          --------------------------
+                          
+
+
+
