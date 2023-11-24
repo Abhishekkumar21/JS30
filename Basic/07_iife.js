@@ -1,6 +1,6 @@
 //IIFE: Immidiatelly Invoked Function Expression
 //- function that runs as soon as it is defined
-//- used to avoid pollulating the global namespaces : sometimes we have many globle variables in the code
+//- used to avoid pollution from the global namespaces : sometimes we have many globle variables in the code
     //which can cause problem in future in program so clean the garbage from the globle namespaces we use iifee
 
 
@@ -30,7 +30,7 @@
 
     //( () => (console.log('DB Disconnected')) )()
 
-    //agar arrow function me sigle line code hai to usko bina 'return' ke ( ) me likh skte hain, no need for  { } and return    
+    //agar arrow function me sigle line code hai to usko bina 'return' ke ( ) ya fir without any braces ,me likh skte hain, no need for  { } and return    
 
 
 
