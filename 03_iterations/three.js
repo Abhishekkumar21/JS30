@@ -1,8 +1,8 @@
-// 'forof' loop:
+// 'forof' loop: returns values by one from the arrays/Maps; does not work in case of Objects
 
 // ["", "", ""]
 // [{}, {}, {}]
-
+/**/
 // const arr = [1,2, 3, 4, 5]
 
 // for (const num of arr) {
@@ -48,7 +48,7 @@ for (const [key, value] of map) {
 
 
 /*================== forof on object ===================================================================*/
-
+// Objects re not iterable by forof loop; for..in loop will works (refer to four.js)
 const user = {
     name : 'abhishek',
     age : 23
