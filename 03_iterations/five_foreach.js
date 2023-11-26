@@ -1,5 +1,5 @@
 
-// Array foreach() method -
+// Array foreach() method - it loops through any array, executing a provided function once for each array element in ascending index order
 // =========================
 
 //syntax : foreach( callbackfn: (curr, index, array) )
