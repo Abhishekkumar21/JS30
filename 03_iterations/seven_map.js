@@ -1,5 +1,5 @@
 // Array map() method - it is a iterative method.
-/** it returns a new array with the result of a call back function for every array element.
+/** it returns a new array with the result of a call back function being executed for each array element.
  *  but it does not modify/mutate the original array
  *  basic syntax - arr.map(callbackfn:(curVal, index, array), thisArg);
  * we can chain other methods with it very easily.
